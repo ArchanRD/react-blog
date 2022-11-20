@@ -6,9 +6,9 @@ const Navbar = (props) => {
     <>
       <div className="navbar">
         <div className="nav-brand">
-          <a href="" className="nav-brand-link">
-            Archan RD
-          </a>
+        <Link to="/" className="nav-brand-link">
+                Archan RD
+              </Link>
         </div>
         <div className="nav-items">
           <ul>
