@@ -1,0 +1,42 @@
+.navbar {
+  font-family: "nunito";
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 50px;
+  align-items: center;
+
+  .nav-brand {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .nav-brand-link {
+    text-decoration: none;
+    color: #212121;
+  }
+
+  .nav-items {
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin: 0 20px;
+        font-size: 20px;
+        line-height: 2;
+
+        a {
+          text-decoration: none;
+          color: #212121;
+          padding-bottom: 20px;
+          border-bottom: 0px solid black;
+
+          &:hover {
+            border-bottom: 2px solid #212121;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
