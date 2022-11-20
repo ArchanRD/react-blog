@@ -1,0 +1,52 @@
+.sidebar {
+  flex: 1;
+
+  .card-mini {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+
+    .img {
+      width: 200px;
+      height: 150px;
+
+      .card-img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card-title {
+      .title-link {
+        text-decoration: none;
+        color: #212122;
+        font-family: "oswald";
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 10px;
+        transition: all ease 0.2s;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .show-more {
+      padding: 5px 20px;
+      cursor: pointer;
+      width: max-content;
+      margin-top: 10px;
+      font-family: "oswald", sans-serif;
+      background-color: #88b198;
+
+
+      &:hover .link {
+        color: #000;
+      }
+
+      .link {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}

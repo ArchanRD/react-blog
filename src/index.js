@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
-import Post1 from "./components/PostDetailed/Post1";
-import Post2 from "./components/PostDetailed/Post2";
+
+import Post from "./components/PostDetailed/I-tried-12-flavours-of-mountain-dew"
+import Post2 from "./components/PostDetailed/Why_Free_Speech_Isnt_An_Excuse";
+import Blog from "./Pages/Blog";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,8 +13,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/post1" element={<Post1 />} />
-        <Route path="/post2" element={<Post2/>} />
+        <Route path="/I-tried-12-flavours-of-mountain-dew" element={<Post/>} />
+        <Route path="/Why_Free_Speech_Isnt_An_Excuse" element={<Post2/>} />
+        <Route path="/blog" element={<Blog/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

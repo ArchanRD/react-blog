@@ -1,22 +1,43 @@
-import "./navbar.scss"
+import { Link } from "react-router-dom";
+import "./navbar.scss";
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <>
-    <div className="navbar">
-        <div className="nav-brand"><a href="" className="nav-brand-link">Archan RD</a></div>
-        <div className="nav-items">
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Links</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
+      <div className="navbar">
+        <div className="nav-brand">
+          <a href="" className="nav-brand-link">
+            Archan RD
+          </a>
         </div>
-    </div>
-    <hr />
+        <div className="nav-items">
+          <ul>
+            <li>
+              <Link to="/" className={props.home}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/blog" className={props.blog}>
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className={props.project}>
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className={props.about}>
+                About
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -1,16 +1,15 @@
 import "./articles.scss";
 import postImage1 from "../../images/post1.jpg";
 import postImage2 from "../../images/post2.jpg";
-import Post1 from "../PostDetailed/Post1";
+import Post1 from "../PostDetailed/I-tried-12-flavours-of-mountain-dew";
 import { Link } from "react-router-dom";
 
 const Articles = () => {
   return (
     <div className="articles">
-      <h1 className="title">All Articles</h1>
       <div className="container">
         <div className="card">
-          <Link to="/post1" className="heading-link">
+          <Link to="/I-tried-12-flavours-of-mountain-dew" className="heading-link">
             <h1 className="card-heading">
               I Tried 21 Flavors of Mountain <br />
               Dew For Some Reason.
@@ -25,13 +24,13 @@ const Articles = () => {
             suggest sexual violence? Why am I forcing my kidneys to undergo the
             aging technique used in that Benjamin Button…
           </p>
-          <Link to="/post1" className="keep-reading">
+          <Link to="/I-tried-12-flavours-of-mountain-dew" className="keep-reading">
             KEEP READING &gt;
           </Link>
         </div>
 
         <div className="card">
-          <Link to="/post2" className="heading-link">
+          <Link to="/Why_Free_Speech_Isnt_An_Excuse" className="heading-link">
             <h1 className="card-heading">Why Free Speech Isn’t An Excuse</h1>
           </Link>
           <img src={postImage2} alt="" className="card-image" />
@@ -42,7 +41,7 @@ const Articles = () => {
             suggest sexual violence? Why am I forcing my kidneys to undergo the
             aging technique used in that Benjamin Button…
           </p>
-          <Link to="/post2" className="keep-reading"> KEEP READING &gt; </Link>
+          <Link to="/Why_Free_Speech_Isnt_An_Excuse" className="keep-reading"> KEEP READING &gt; </Link>
         </div>
       </div>
     </div>

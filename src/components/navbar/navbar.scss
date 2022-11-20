@@ -8,6 +8,8 @@
   .nav-brand {
     font-weight: 600;
     font-size: 25px;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 500;
   }
 
   .nav-brand-link {
@@ -30,6 +32,11 @@
           color: #212121;
           padding-bottom: 20px;
           border-bottom: 0px solid black;
+
+          &.active{
+            border-bottom: 2px solid #212121;
+            color: black;
+          }
 
           &:hover {
             border-bottom: 2px solid #212121;
